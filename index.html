@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUTC 網頁程式設計 Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-brand">Happy Survey</div>
+        <div class="sidebar-item active">📊 數據儀表板</div>
+        <div class="sidebar-item">📅 課堂練習</div>
+    </div>
+
+    <div class="main-content">
+        <nav class="topbar">
+            <h2>網頁程式設計問卷分析</h2>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header">你覺得自己比較像哪一種生物？</div>
+                    <div class="card-body">
+                        <canvas id="creatureChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">你是「截止日前」的哪一派？</div>
+                    <div class="card-body">
+                        <canvas id="deadlineChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">最近兩週平均每天睡眠時數</div>
+                    <div class="card-body">
+                        <canvas id="sleepChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">最近能量條 (0-100) 平均值</div>
+                    <div class="card-body">
+                        <canvas id="energyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
